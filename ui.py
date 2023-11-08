@@ -31,7 +31,7 @@ def validate_name(name):
     while True:
         try:
             name = str(name)
-            if all(char.isalpha() or char in '- ' for char in name):
+            if all(char.isalpha() or char in '-. ' for char in name):
                 return name
             else:
                 name = input("Invalid input. Please enter a valid string:\n")
